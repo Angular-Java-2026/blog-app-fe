@@ -2,4 +2,7 @@ export const environment = {
   production: false,
   primeUILicense:
     'eyJpZCI6IjYwMGFkY2UyLTM5YTMtNGQ2YS05NGM0LWEzNmFlODNlZDQ1ZCIsInByb2R1Y3QiOiJwcmltZXVpIiwidGllciI6ImNvbW11bml0eSIsInR5cGUiOiJkZXYiLCJpYXQiOjE3ODc4ODYzOTMsImV4cCI6MTgxOTQyMjM5M30.fJ9MOSwRNcyaKzAoKBUcU2F3yip3fXjTeD4dk3speRN4TPCJsC6Qp21RV8hLuF6WOR0rRWfRvGGFz9NYrNI0Cw',
+  blogApiUrl: 'http://localhost:8080',
+  username: 'user1',
+  password: 'Passw@rd1'
 };

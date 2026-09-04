@@ -1,5 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { providePrimeNG } from 'primeng/config';
@@ -13,12 +14,13 @@ import { BlogModule } from './blog/blog-module';
   imports: [BrowserModule, AppRoutingModule, BlogModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
+    provideHttpClient(),
     providePrimeNG({
       theme: {
         preset: Aura,
         options: {
-          darkModeSelector: false
-        }
+          darkModeSelector: false,
+        },
       },
       license: environment.primeUILicense,
     }),
