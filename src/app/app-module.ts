@@ -16,6 +16,9 @@ import { BlogModule } from './blog/blog-module';
     providePrimeNG({
       theme: {
         preset: Aura,
+        options: {
+          darkModeSelector: false
+        }
       },
       license: environment.primeUILicense,
     }),
