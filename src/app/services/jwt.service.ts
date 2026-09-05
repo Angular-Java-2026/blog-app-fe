@@ -35,7 +35,7 @@ export class JwtService {
   ): Observable<string> {
     const payload: AuthRequest = { username, password };
 
-    return this.http.post(`${this.baseUrl}/generateToken`, payload, { responseType: 'text' }).pipe(
+    return this.http.post(`${this.baseUrl}/token`, payload, { responseType: 'text' }).pipe(
       tap((response: string) => {
         let token = response;
         try {

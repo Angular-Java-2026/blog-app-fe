@@ -13,7 +13,7 @@ export class BlogService {
   getAllBlogs(): Observable<BlogInfo[]> {
     return this.jwtService.getValidToken().pipe(
       switchMap((token: string) =>
-        this.http.get<BlogInfo[]>(`${environment.blogApiUrl}/api/blog`, {
+        this.http.get<BlogInfo[]>(`${environment.blogApiUrl}/api/blogs`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
